@@ -387,6 +387,7 @@ Plug 'RRethy/vim-illuminate'
 " File navigation
 "Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 "Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'kevinhwang91/rnvimr'
@@ -440,6 +441,7 @@ Plug 'yuezk/vim-js', { 'for': ['vim-plug', 'php', 'html', 'javascript', 'css', '
 "Plug 'jaxbot/browserlink.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'posva/vim-vue'
+Plug 'mxw/vim-jsx'
 
 " Go
 Plug 'fatih/vim-go' , { 'for': ['go', 'vim-plug'], 'tag': '*' }
@@ -709,9 +711,9 @@ let g:table_mode_cell_text_object_i_map = 'k<Bar>'
 " ===
 " === FZF
 " ===
-set rtp+=/usr/local/opt/fzf
-set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
-set rtp+=/home/david/.linuxbrew/opt/fzf
+"set rtp+=/usr/local/opt/fzf
+"set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
+"set rtp+=/home/david/.linuxbrew/opt/fzf
 " noremap <silent> <C-p> :Files<CR>
 noremap <silent> <C-p> :Leaderf file<CR>
 noremap <silent> <C-f> :Rg<CR>
