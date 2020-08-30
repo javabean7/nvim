@@ -717,7 +717,7 @@ let g:table_mode_cell_text_object_i_map = 'k<Bar>'
 "set rtp+=/home/david/.linuxbrew/opt/fzf
 " noremap <silent> <C-p> :Files<CR>
 noremap <silent> <C-p> :Leaderf file<CR>
-noremap <silent> <C-f> :Rg<CR>
+noremap <silent> <C-f> :Ag<CR>
 noremap <silent> <C-h> :History<CR>
 "noremap <C-t> :BTags<CR>
 noremap <silent> <C-l> :Lines<CR>
