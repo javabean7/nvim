@@ -126,6 +126,7 @@ let g:terminal_color_14 = '#9AEDFE'
 " === Basic Mappings
 " ===
 " Set <LEADER> as <SPACE>, ; as :
+inoremap jk <ESC>
 let mapleader=" "
 noremap ; :
 
