@@ -30,7 +30,7 @@ if empty(glob('~/.config/nvim/_machine_specific.vim'))
 	let has_machine_specific_file = 0
 	silent! exec "!cp ~/.config/nvim/default_configs/_machine_specific_default.vim ~/.config/nvim/_machine_specific.vim"
 endif
-source $XDG_CONFIG_HOME/nvim/_machine_specific.vim
+source ~/.config/nvim/_machine_specific.vim
 
 
 " ====================
@@ -138,11 +138,8 @@ noremap S :w<CR>
 noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 
 " Undo operations
-noremap l u
 
 " Insert Key
-noremap k i
-noremap K I
 
 " make Y to copy till the end of the line
 nnoremap Y y$
@@ -182,35 +179,20 @@ noremap <c-g> :tabe<CR>:-tabmove<CR>:term lazygit<CR>
 " < n   i >
 "     e
 "     v
-noremap <silent> u k
-noremap <silent> n h
-noremap <silent> e j
-noremap <silent> i l
-noremap <silent> gu gk
-noremap <silent> ge gj
 
 " U/E keys for 5 times u/e (faster navigation)
-noremap <silent> U 5k
-noremap <silent> E 5j
 
 " N key: go to the start of the line
-noremap <silent> N 0
 " I key: go to the end of the line
-noremap <silent> I $
 
 " Faster in-line navigation
-noremap W 5w
-noremap B 5b
 
 " set h (same as n, cursor left) to 'end of word'
-noremap h e
 
 " Ctrl + U or E will move up/down the view port without moving the cursor
-noremap <C-U> 5<C-y>
-noremap <C-E> 5<C-e>
 
 
-source $XDG_CONFIG_HOME/nvim/cursor.vim
+source ~/.config/nvim/cursor.vim
 
 " ===
 " === Insert Mode Cursor Movement
@@ -242,11 +224,6 @@ noremap = n
 " === Window management
 " ===
 " Use <space> + new arrow keys for moving the cursor around windows
-noremap <LEADER>w <C-w>w
-noremap <LEADER>u <C-w>k
-noremap <LEADER>e <C-w>j
-noremap <LEADER>n <C-w>h
-noremap <LEADER>i <C-w>l
 
 " Disable the default s key
 noremap s <nop>
@@ -293,7 +270,7 @@ noremap tmi :+tabmove<CR>
 " === Markdown Settings
 " ===
 " Snippets
-source $XDG_CONFIG_HOME/nvim/md-snippets.vim
+source ~/.config/nvim/md-snippets.vim
 " auto spell
 autocmd BufRead,BufNewFile *.md setlocal spell
 
@@ -403,7 +380,7 @@ Plug 'theniceboy/vim-deus'
 Plug 'theniceboy/eleline.vim'
 
 " General Highlighter
-Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
+"Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'RRethy/vim-illuminate'
 
 " File navigation
@@ -573,7 +550,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 "color dracula
 "color one
-color deus
+"color deus
 "color gruvbox
 "let ayucolor="light"
 "color ayu
@@ -1125,7 +1102,7 @@ vmap ga :Tabularize /
 " ===
 " === vim-after-object
 " ===
-autocmd VimEnter * call after_object#enable('=', ':', '-', '#', ' ')
+"autocmd VimEnter * call after_object#enable('=', ':', '-', '#', ' ')
 
 
 " ===
@@ -1303,9 +1280,9 @@ noremap <c-y> :NR<CR>
 " ===
 " === any-jump
 " ===
-nnoremap j :AnyJump<CR>
-let g:any_jump_window_width_ratio  = 0.8
-let g:any_jump_window_height_ratio = 0.9
+"nnoremap j :AnyJump<CR>
+"let g:any_jump_window_width_ratio  = 0.8
+"let g:any_jump_window_height_ratio = 0.9
 
 
 " ===
