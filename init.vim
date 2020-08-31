@@ -612,7 +612,6 @@ let g:coc_global_extensions = [
 	\ 'coc-python',
 	\ 'coc-snippets',
 	\ 'coc-sourcekit',
-	\ 'coc-stylelint',
 	\ 'coc-syntax',
 	\ 'coc-tasks',
 	\ 'coc-todolist',
@@ -720,7 +719,7 @@ noremap <silent> <C-p> :Leaderf file<CR>
 noremap <silent> <C-f> :Ag<CR>
 noremap <silent> <C-h> :History<CR>
 "noremap <C-t> :BTags<CR>
-noremap <silent> <C-l> :Lines<CR>
+noremap <silent> <C-s> :Lines<CR>
 noremap <silent> <C-w> :Buffers<CR>
 noremap <leader>; :History:<CR>
 
@@ -744,7 +743,7 @@ command! BD call fzf#run(fzf#wrap({
   \ 'options': '--multi --reverse --bind ctrl-a:select-all+accept'
 \ }))
 
-noremap <c-d> :BD<CR>
+noremap <c-l> :BD<CR>
 
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
 
