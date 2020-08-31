@@ -103,7 +103,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " ===
 let g:neoterm_autoscroll = 1
 autocmd TermOpen term://* startinsert
-tnoremap <C-N> <C-\><C-N>
+"tnoremap <C-N> <C-\><C-N>
 tnoremap <C-O> <C-\><C-N><C-O>
 let g:terminal_color_0  = '#000000'
 let g:terminal_color_1  = '#FF5555'
@@ -683,8 +683,8 @@ noremap <silent> <leader>ts :CocList tasks<CR>
 " coc-snippets
 imap <C-l> <Plug>(coc-snippets-expand)
 vmap <C-e> <Plug>(coc-snippets-select)
-let g:coc_snippet_next = '<c-e>'
-let g:coc_snippet_prev = '<c-n>'
+let g:coc_snippet_next = '<c-n>'
+let g:coc_snippet_prev = '<c-p>'
 imap <C-e> <Plug>(coc-snippets-expand-jump)
 let g:snips_author = 'David Chen'
 
@@ -757,12 +757,6 @@ let g:Lf_PreviewInPopup = 1
 let g:Lf_PreviewCode = 1
 let g:Lf_ShowHidden = 1
 let g:Lf_ShowDevIcons = 1
-let g:Lf_CommandMap = {
-\   '<C-k>': ['<C-u>'],
-\   '<C-j>': ['<C-e>'],
-\   '<C-]>': ['<C-v>'],
-\   '<C-p>': ['<C-n>'],
-\}
 
 
 " ===
@@ -843,7 +837,7 @@ let g:VM_maps['Find Subword Under'] = '<C-k>'
 let g:VM_maps['Find Next']          = ''
 let g:VM_maps['Find Prev']          = ''
 let g:VM_maps['Remove Region']      = 'q'
-let g:VM_maps['Skip Region']        = '<c-n>'
+"let g:VM_maps['Skip Region']        = '<c-n>'
 let g:VM_maps["Undo"]               = 'l'
 let g:VM_maps["Redo"]               = '<C-r>'
 
