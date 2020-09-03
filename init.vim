@@ -531,6 +531,8 @@ Plug 'lambdalisue/suda.vim' " do stuff like :sudowrite
 " Plug 'kana/vim-textobj-user'
 " Plug 'roxma/nvim-yarp'
 
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
 
 call plug#end()
 set re=0
@@ -715,6 +717,7 @@ let g:table_mode_cell_text_object_i_map = 'k<Bar>'
 "set rtp+=/home/david/.linuxbrew/opt/fzf
 " noremap <silent> <C-p> :Files<CR>
 " noremap <silent> <C-p> :Leaderf file<CR>
+noremap <LEADER>ar :Ranger<CR>
 noremap <LEADER>fs :w<CR>
 noremap <LEADER>pf :Files<CR>
 noremap <LEADER>sap :Ag<CR>
