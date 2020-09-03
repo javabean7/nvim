@@ -1298,6 +1298,11 @@ let g:typescript_ignore_browserwords = 1
 nnoremap <LEADER>gl :Agit<CR>
 let g:agit_no_default_mappings = 1
 
+" ===
+" === ranger
+" ===
+let g:ranger_command_override = 'ranger --cmd "set show_hidden=true"'
+
 " ===================== End of Plugin Settings =====================
 
 
