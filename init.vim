@@ -127,7 +127,6 @@ let g:terminal_color_14 = '#9AEDFE'
 " ===
 " Set <LEADER> as <SPACE>, ; as :
 inoremap jk <ESC>
-nnoremap <LEADER>fs :w
 let mapleader=" "
 noremap ; :
 
@@ -390,7 +389,7 @@ Plug 'RRethy/vim-illuminate'
 "Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+"Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'kevinhwang91/rnvimr'
 Plug 'airblade/vim-rooter'
 Plug 'pechorin/any-jump.vim'
@@ -716,7 +715,10 @@ let g:table_mode_cell_text_object_i_map = 'k<Bar>'
 "set rtp+=/home/david/.linuxbrew/opt/fzf
 " noremap <silent> <C-p> :Files<CR>
 " noremap <silent> <C-p> :Leaderf file<CR>
-noremap <silent> <C-f> :Ag<CR>
+noremap <LEADER>fs :w<CR>
+noremap <LEADER>pf :Files<CR>
+noremap <LEADER>sap :Ag<CR>
+"noremap <silent> <C-f> :Ag<CR>
 noremap <silent> <C-h> :History<CR>
 "noremap <C-t> :BTags<CR>
 noremap <silent> <C-s> :Lines<CR>
