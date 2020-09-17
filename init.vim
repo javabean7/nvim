@@ -533,8 +533,20 @@ Plug 'lambdalisue/suda.vim' " do stuff like :sudowrite
 
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+Plug 'mcchrish/nnn.vim'
 
 call plug#end()
+" Disable default mappings
+let g:nnn#set_default_mappings = 0
+
+" Then set your own
+nnoremap <silent> <leader>nn :NnnPicker<CR>
+
+
+" Or override
+" Start nnn in the current file's directory
+nnoremap <leader>n :NnnPicker '%:p:h'<CR>
 set re=0
 
 " experimental
