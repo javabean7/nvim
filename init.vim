@@ -167,7 +167,8 @@ noremap <silent> <LEADER>o za
 
 " Open up lazygit
 noremap \g :Git 
-noremap <c-g> :tabe<CR>:-tabmove<CR>:term lazygit<CR>
+"noremap <c-g> :tabe<CR>:-tabmove<CR>:term lazygit<CR>
+noremap <LEADER>gs :tabe<CR>:-tabmove<CR>:term lazygit<CR>
 " nnoremap <c-n> :tabe<CR>:-tabmove<CR>:term lazynpm<CR>
 
 
