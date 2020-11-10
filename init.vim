@@ -371,6 +371,9 @@ call plug#begin('~/.config/nvim/plugged')
 " Testing my own plugin
 " Plug 'theniceboy/vim-calc'
 
+" Treesitter
+"Plug 'nvim-treesitter/nvim-treesitter'
+
 " Pretty Dress
 Plug 'bling/vim-bufferline'
 Plug 'bpietravalle/vim-bolt'
