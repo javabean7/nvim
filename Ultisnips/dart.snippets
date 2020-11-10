@@ -8,7 +8,7 @@ padding: EdgeInsets.only(${1:left: ${2:0}}${3:, right: ${4:0}}${5:, top: ${6:0}}
 endsnippet
 
 snippet paa "Padding All"
-pagging: EdgeInsets.all(${1:8.0}),
+padding: EdgeInsets.all(${1:8.0}),
 endsnippet
 
 snippet pah "Padding Horizontal"
@@ -107,13 +107,13 @@ endsnippet
 snippet exp "Expanded"
 Expanded(
   child: ${0},
-)
+),
 endsnippet
 
 snippet flx "Flexible"
 Flexible(
   child: ${0},
-)
+),
 endsnippet
 
 snippet cons "Container Sized"
@@ -204,9 +204,9 @@ endsnippet
 
 snippet dispose "dispose"
 @override
-void initState() {
-  super.initState();
+void dispose() {
   ${0:}
+  super.dispose();
 }
 endsnippet
 
@@ -281,6 +281,10 @@ snippet sss "Single-line Set State"
 setState(() => ${1:/* TODO */} );
 endsnippet
 
+snippet sst "Empty Set State"
+setState(() {})${0}
+endsnippet
+
 snippet rf "Request focus"
 FocusScope.of(context).requestFocus(${0});
 endsnippet
@@ -312,7 +316,7 @@ RawMaterialButton(
 endsnippet
 
 snippet st "print();"
-print("${0}");
+print(${0});
 endsnippet
 
 snippet sbj "Behavior subject"
