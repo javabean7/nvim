@@ -168,7 +168,8 @@ noremap <silent> <LEADER>o za
 " Open up lazygit
 noremap \g :Git 
 "noremap <c-g> :tabe<CR>:-tabmove<CR>:term lazygit<CR>
-noremap <LEADER>gs :tabe<CR>:-tabmove<CR>:term lazygit<CR>
+"noremap <LEADER>gs :tabe<CR>:-tabmove<CR>:term lazygit<CR>
+noremap <LEADER>gs :tabe<CR>:-tabmove<CR>:LazyGit<CR>
 " nnoremap <c-n> :tabe<CR>:-tabmove<CR>:term lazynpm<CR>
 
 
@@ -284,7 +285,7 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 nnoremap \t :tabe<CR>:-tabmove<CR>:term sh -c 'st'<CR><C-\><C-N>:q<CR>
 
 " Move the next character to the end of the line with ctrl+9
-inoremap <C-u> <ESC>lx$p
+" inoremap <C-u> <ESC>lx$p
 
 " Opening a terminal window
 noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
@@ -421,6 +422,8 @@ Plug 'fszymanski/fzf-gitignore', { 'do': ':UpdateRemotePlugins' }
 "Plug 'mhinz/vim-signify'
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/agit.vim'
+"Plug 'kdheepak/lazygit.nvim'
+Plug 'kdheepak/lazygit.nvim', { 'branch': 'nvim-v0.4.3' }
 
 " Autoformat
 Plug 'Chiel92/vim-autoformat'
@@ -494,6 +497,8 @@ Plug 'theniceboy/argtextobj.vim'
 Plug 'rhysd/clever-f.vim'
 Plug 'chrisbra/NrrwRgn'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'theniceboy/pair-maker.vim'
+Plug 'Yggdroot/indentLine'
 
 " For general writing
 " Plug 'junegunn/goyo.vim'
@@ -1368,6 +1373,15 @@ let g:airline_symbols.branch = 'BR'
 let g:airline_symbols.readonly = "RO"
 let g:airline_symbols.dirty = "DT"
 let g:airline_symbols.crypt = "CR" 
+
+" ===
+" === lazygit.nvim
+" ===
+noremap <c-g> :LazyGit<CR>
+let g:lazygit_floating_window_winblend = 0 " transparency of floating window
+let g:lazygit_floating_window_scaling_factor = 1.0 " scaling factor for floating window
+let g:lazygit_floating_window_corner_chars = ['╭', '╮', '╰', '╯'] " customize lazygit popup window corner characters
+let g:lazygit_use_neovim_remote = 1 " for neovim-remote support
 
 " ===================== End of Plugin Settings =====================
 
